@@ -3,7 +3,6 @@
 ![Java](https://img.shields.io/badge/Java-17%2B-007396?logo=java)
 ![Swing](https://img.shields.io/badge/Swing-GUI-4DABE4)
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?logo=mysql)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 Sistema de Ponto de Venda completo para cafeterias com integração em tempo real com banco de dados e notificações via Discord.
 
