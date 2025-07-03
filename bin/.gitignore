@@ -1,0 +1,11 @@
+/.env
+/cliente_banco/
+/conect_banco/
+/conexao_controle/
+/controladores/
+/controle_estoque/
+/inteface/
+/produto/
+/seguranca/
+/status_pagamento/
+/tratamento_excecao/
