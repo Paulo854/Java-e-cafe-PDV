@@ -9,6 +9,7 @@ import controladores.controle_cliente;
 import controladores.interface_controller;
 import controle_estoque.Atualizar_estoque;
 import controle_estoque.Verificar_estoque;
+import status_pedidos_online.ConsultaPedido;
 import controle_estoque.verificar_estoque_btn;
 import io.github.cdimascio.dotenv.Dotenv;
 import produto.Produtos;
@@ -344,6 +345,15 @@ public class Vendas extends JFrame {
                         }
 
                         Future<Integer> resultadoFuture = pdv.verificarIp(ipPC);
+                        ConsultaPedido pedidosOnline = new ConsultaPedido();
+                        
+                        int pOnline = pedidosOnline.consultaPedido();
+                        
+                        if(pOnline == 1) {
+                        	JOptionPane.showMessageDialog(null, "Localizamos um pedido para está filial\n pedido enviado para cozinha");
+                        }else {
+                        	JOptionPane.showMessageDialog(null, "Não foi localizado nenhum pedido para a filial");
+                        }
                         try {
                             int resultConect = resultadoFuture.get();
                             System.out.println("Resultado: " + resultConect);

@@ -272,6 +272,8 @@ public class Login extends JFrame implements ActionListener {
                 JOptionPane.showMessageDialog(null, "Login ou senha incorretos!");
                 btn_logar.setEnabled(true);
             } else if(operador.getNumberOperador() != 0) {
+            	JOptionPane.showMessageDialog(null, "Sistema no modo desenvolvedor operador: "+operador.getNomeOperador()+" matrícula:" +operador.getNumberOperador());
+            	btn_logar.setEnabled(true);
             }else{
                 JOptionPane.showMessageDialog(null, "Erro ao conectar ao banco de dados.");
                 discord_erro_pdv erroDiscord = new discord_erro_pdv();
